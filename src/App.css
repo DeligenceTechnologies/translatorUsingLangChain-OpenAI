@@ -1,0 +1,266 @@
+* {
+  margin: 0;
+  padding: 0;
+  background-color: #f1f1f1;
+}
+
+.App {
+  text-align: center;
+  font-family: "Google Sans", Roboto, Arial, sans-serif;
+  font-size: 20px;
+}
+.input {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.text {
+  min-width: 520px;  
+  height: 164px;
+}
+
+@media only screen and (max-width: 700px) {
+  .input {
+    flex-direction: column;
+    width: 100%;
+  }
+  .userInput {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+  }
+  .text {
+    min-width: 100%;
+    height: 164px;
+  }
+}
+
+.appTitle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 50px;
+  color: #5f6368;
+  font-size: 25px;
+  line-height: 24px;
+  border-bottom: 1px solid #5f6368;
+  min-height: 70px;
+}
+
+.appTitle > h2 {
+  margin: 0;
+}
+
+button {
+  padding: 8px 8px;
+  margin: 10px 10px;
+  background-color: rgb(82, 114, 242);
+  color: white;
+  font-size: medium;
+  cursor: pointer;
+}
+
+.header {
+  background-color: rgb(17, 124, 138);
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: whitesmoke;
+  font-size: 20px;
+  font-weight: bolder;
+}
+
+.content {
+  margin: 30px 0px;
+}
+
+.btn {
+  border-radius: 20px;
+  padding: 15px;
+  font-size: 20px;
+  background-color: rgb(82, 114, 242);
+}
+.btn:hover {
+  background-color: rgba(12, 76, 136, 0.932);
+}
+
+.btn:disabled {
+  background-color: gray;
+  cursor: not-allowed;
+}
+
+a :hover {
+  cursor: pointer;
+}
+
+.Buttons {
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.dropdown {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-bottom: 3px;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 700px) {
+  .dropdown {
+    width: 100%;
+  }
+}
+
+
+.switchBox{
+  margin: 40px;
+}
+
+@media only screen and (max-width: 700px) {
+  .userOutput {
+    width: 100%;
+    margin-bottom: 5px;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .switchIcon {
+    transform: rotate(90deg);
+  }
+  .switchBox {
+    margin: 20px;
+    color: #5f6368;
+  }
+}
+
+.sidebar {
+  height: 100%;
+  width: 0px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: #f1f1f1;
+  border-left: 1px solid #5f6368;
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+.sidebar.active {
+  width: 400px;
+}
+
+.sidebarTitle {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 30px;
+  border-bottom: 1px solid #5f6368;
+}
+
+.sidebarTitle > a:hover {
+  cursor: pointer;
+}
+
+.my-modal {
+  max-width: 85vw;
+}
+@media only screen and (max-width: 700px) {
+  .my-modal {
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+    border: none;
+  }
+}
+
+.modalCol {
+  cursor: pointer;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+
+.modalCol:hover {
+  color: rgb(26, 115, 232);
+  background: rgba(247, 245, 245, 0.973);
+}
+
+@media only screen and (max-width: 700px) {
+  .modalRow {
+    font-size: larger;
+  }
+}
+
+.inputfield {
+  border: none;
+  outline: none;
+  width: "100%";
+  height: 40px;
+  margin: "10px 20px";
+}
+
+.inputfield:focus {
+  outline: none;
+  border: none;
+}
+.inputfield:focus:hover {
+  outline: none;
+  border: none;
+}
+
+.buttonIcon {
+  color: #757575;
+  height: 32px;
+  width: 32px;
+  user-select: none;
+  fill: currentColor;
+  flex-shrink: 0;
+}
+
+.buttontitle {
+  color: rgba(0, 0, 0, 0.54);
+  font-family: "Google Sans", "sans-serif";
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 18px;
+  margin-top: 8px;
+  user-select: none;
+}
+
+.buttonBox {
+  align-items: center;
+  background-color: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  border-radius: 50%;
+  display: flex;
+  height: 70px;
+  justify-content: center;
+  width: 70px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.ButtonAction {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+
+@media only screen and (max-width: 700px) {
+  .ButtonAction {
+    justify-content: space-evenly;
+  }
+}
