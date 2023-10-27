@@ -1,4 +1,5 @@
 # Traslation Web App 
+    It converts a particular text from one desired Language to another desired Language
 
 # Technologies Used:-
     LangChain :- https://www.langchain.com
