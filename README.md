@@ -1,5 +1,7 @@
 # Traslation Web App 
-    It converts a particular text from one desired Language to another desired Language
+    A powerful and versatile translator made using OpenAI's ChatGPT and the LangChain framework. 
+    This translator can translate text between a wide range of languages, 
+        including English, Spanish, French, German, Chinese, Japanese, and Korean.
 
 # Technologies Used:-
     LangChain :- https://www.langchain.com
